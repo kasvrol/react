@@ -1,6 +1,9 @@
 import './App.css';
 import { useState } from 'react';
 import Modal from 'react-modal';
+import animal01 from './images/cow.png'
+import animal02 from './images/horse.png'
+import animal03 from './images/sheep.png'
 
 function App() {
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -27,15 +30,18 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={openModal}>Open Modal</button>
+      <button onClick={openModal}>Clique aqui e escolha um animal para pastar</button>
 
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
       >
-        <h2>Hello</h2>
-        <div>I am a modal</div>
+        <div>
+          <img src={animal01} alt='Vaca'/>
+          <img src={animal03} alt='Ovelha'/>
+          <img src={animal02} alt='Cavalo'/>
+        </div>
         <button onClick={closeModal}>close</button>
       </Modal>
     </div>
