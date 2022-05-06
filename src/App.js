@@ -19,18 +19,20 @@ function App() {
 
   const customStyles = {
     content: {
-      top: '50%',
-      left: '50%',
       right: 'auto',
       bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
+      width: '25vw',
+      height: '5vw',
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems:'center',
+      justifyContent: 'space-evenly'
     },
   };
 
   return (
     <div className="App">
-      <button onClick={openModal}>Clique aqui e escolha um animal para pastar</button>
+      <button onClick={openModal} className='modalButton'>Clique aqui e escolha um animal para pastar</button>
 
       <Modal
         isOpen={modalIsOpen}
@@ -42,7 +44,6 @@ function App() {
           <img src={animal03} alt='Ovelha' className='iconImage'/>
           <img src={animal02} alt='Cavalo' className='iconImage'/>
         </div>
-        <button onClick={closeModal}>close</button>
       </Modal>
     </div>
   );

@@ -4,6 +4,21 @@
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.modalButton {
+  width: 23vw;
+  height: auto;
+  border-radius: .3vw;
+  border: none;
+  margin-top: 3vw;
+  background-color: rgba(255, 255, 255, 0.447);
+  color: rgba(0, 0, 0, 0.795);
+  padding: .5vw;
 }
 
 .iconImage {
