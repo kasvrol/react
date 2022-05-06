@@ -38,9 +38,9 @@ function App() {
         style={customStyles}
       >
         <div>
-          <img src={animal01} alt='Vaca'/>
-          <img src={animal03} alt='Ovelha'/>
-          <img src={animal02} alt='Cavalo'/>
+          <img src={animal01} alt='Vaca' className='iconImage'/>
+          <img src={animal03} alt='Ovelha' className='iconImage'/>
+          <img src={animal02} alt='Cavalo' className='iconImage'/>
         </div>
         <button onClick={closeModal}>close</button>
       </Modal>
